@@ -15,3 +15,15 @@ const subtitulos =  TextStyle(
 const textos =  TextStyle(
           fontSize: 18, fontWeight: FontWeight.bold,
         );
+
+const botones =  TextStyle(
+          fontSize: 40, fontWeight: FontWeight.bold,
+          color: Colors.amber,
+          
+        );
+
+        const botonSeleccion =  TextStyle(
+          fontSize: 45, fontWeight: FontWeight.bold,
+          color: Colors.red,
+          
+        );

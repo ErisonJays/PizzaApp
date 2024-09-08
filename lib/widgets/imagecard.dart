@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
-
+import 'package:pizza_app/Screen/vegetarianascreen.dart';
+import '../Screen/clasicascreen.dart';
+import '../Screen/pedidoscreen.dart';
 import '../estilos/estilos.dart';
+import 'clasicaboton.dart';
+import 'vegetarianaboton.dart';
 
 
 class ImagenCard extends StatelessWidget {
@@ -10,28 +14,16 @@ class ImagenCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    
     return Column(
       children: [
     const Text("Elige tu pizza favorita", style: subtitulos ),
          
        const  Text("Pizza Tradicional",style: textos ),
-       IconButton(
-       icon: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3yUC2BqMpx9KsnwO5kP4H8JAG4XX62PfaIA&s',
-       width: double.infinity, height: 200, fit: BoxFit.cover),
-       iconSize: 50,
-       onPressed: () {
-        print("Pizza Tradicional");
-       },
-       
-),
+       ClasicaBoton(),
      const Text("Pizza Vegetariana",style: textos ),
- IconButton(
-       icon: Image.network('https://www.silviocicchi.com/pizzachef/wp-content/uploads/2015/02/v2.jpg',
-       width: double.infinity, height: 200, fit: BoxFit.cover),
-       iconSize: 50,
-       onPressed: () {
-        print("Pizza Vegetariana");
-       }, ),
+ VegetarianaBoton(),
       
         Padding(
           padding: const EdgeInsets.only(top: 15),
@@ -45,5 +37,4 @@ class ImagenCard extends StatelessWidget {
     
   }
 }
-
 
