@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pizza_app/Screen/vegetarianascreen.dart';
-import '../Screen/clasicascreen.dart';
-import '../Screen/pedidoscreen.dart';
 import '../estilos/estilos.dart';
 import 'clasicaboton.dart';
 import 'vegetarianaboton.dart';
