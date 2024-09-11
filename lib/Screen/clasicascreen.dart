@@ -41,21 +41,21 @@ class ClasicaScreen extends StatelessWidget {
                  //pasar valor a la siguiente pagina
                   IrPedidoScreen("Peperoni");
                   
-                }, child: Text("Peperoni", style: botones,)),
+                }, child: Text("1-Peperoni", style: botones,)),
               TextButton (
                 onPressed: (){
 
                   //pasar valor a la siguiente pagina
                   IrPedidoScreen("Jamon");
                   
-                }, child:  Text("Jamon", style: botones, )), 
+                }, child:  Text("2-Jamon", style: botones, )), 
                 TextButton (
                 onPressed: (){
 
                   //pasar valor a la siguiente pagina
                   IrPedidoScreen("Salmon");
                   
-                }, child:  Text("Salmon", style: botones,)), 
+                }, child:  Text("3-Salmon", style: botones,)), 
 
                 Image.network("https://st2.depositphotos.com/1177973/7397/i/950/depositphotos_73971353-stock-photo-food-ingredients-for-pizza-on.jpg",
                 width: double.infinity, height: 300,)

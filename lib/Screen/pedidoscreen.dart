@@ -22,28 +22,32 @@ class PedidoScreen extends StatelessWidget {
       body: Center(
         child: Padding(
           padding: const EdgeInsets.only(top: 60),
-          child: Column(
-               //  mainAxisAlignment: MainAxisAlignment.spaceAround, 
-            //Alinear y separar los elementos de la fila
-            children:[
-              const Text("Su orden",style: subtitulos),
-           
-            Text("Los ingredientes de su pizza son ${ingrediente}, Mozzarella y Tomate:",style: TextStyle(
-            fontSize: 20, fontWeight: FontWeight.bold),),
+          child: Center(
+            child: Column(
+                 //  mainAxisAlignment: MainAxisAlignment.spaceAround, 
+              //Alinear y separar los elementos de la fila
+              children:[
+                const Text("Su orden",style: subtitulos),
              
-              TextButton (
-                onPressed: (){
-                   Navigator.push(context,
-                   MaterialPageRoute(builder: (context) => HomeScreen()));
-                }, child: const Text("Home", style: botones, )), 
-                
-
-                Image.network("https://thumbs.dreamstime.com/b/caja-de-env%C3%ADo-pizza-personaje-dibujos-animados-pizzeria-orden-ilustraci%C3%B3n-entrega-courier-casco-con-repartidor-que-lleva-comida-218968479.jpg",
-                width: double.infinity, height: 300,)
-                
-                ],
-          
-          
+             const Text("Los ingredientes de su pizza son:",style: TextStyle(
+              fontSize: 20, fontWeight: FontWeight.bold),),
+               Text(" *$ingrediente \n +Mozzarella \n +Tomate",style: TextStyle(
+              fontSize: 20, fontWeight: FontWeight.bold),),
+               
+                TextButton (
+                  onPressed: (){
+                     Navigator.push(context,
+                     MaterialPageRoute(builder: (context) => HomeScreen()));
+                  }, child: const Text("Home", style: botones, )), 
+                  
+            
+                  Image.network("https://thumbs.dreamstime.com/b/caja-de-env%C3%ADo-pizza-personaje-dibujos-animados-pizzeria-orden-ilustraci%C3%B3n-entrega-courier-casco-con-repartidor-que-lleva-comida-218968479.jpg",
+                  width: double.infinity, height: 300,)
+                  
+                  ],
+            
+            
+            ),
           ),
         ),
       ),);

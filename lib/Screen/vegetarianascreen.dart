@@ -45,11 +45,11 @@ class _ClasicaScreenState extends State<VegetarianaScreen> {
               TextButton (
                 onPressed: (){
                   IrPedidoScreen("Pimiento");
-                }, child: const Text("Pimiento", style: botones,)),
+                }, child: const Text("1-Pimiento", style: botones,)),
               TextButton (
                 onPressed: (){
                   IrPedidoScreen("Tofu");
-                }, child: const Text("Tofu", style: botones, )), 
+                }, child: const Text("2-Tofu", style: botones, )), 
                 
 
                 Image.network("https://i.blogs.es/4a627f/1304330927_20dc6f5311/450_1000.webp",

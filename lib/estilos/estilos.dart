@@ -17,8 +17,9 @@ const textos =  TextStyle(
         );
 
 const botones =  TextStyle(
-          fontSize: 40, fontWeight: FontWeight.bold,
+          fontSize: 30, fontWeight: FontWeight.bold,
           color: Colors.amber,
+          
           
         );
 
